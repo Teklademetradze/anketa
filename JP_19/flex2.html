@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <span  class="letter b">B</span>
+        <span class="letter m">M</span>
+        <span class="letter w">W</span>
+
+    
+    <div class="main1">
+        <div class="main2">
+            <div class="main3">
+                <div class="item1"></div>
+                <div class="item2"></div>
+                <div class="item3"></div> 
+                <div class="item4"></div>
+        </div>
+    </div>
+    </body>
+    <style>
+        .main1{
+            border-radius: 50%;
+            width: 410px;
+            height:410px;
+            border: 10px solid rgba(162,176,183,255);
+            display: flex;
+            flex-wrap: wrap;
+            margin: auto;   
+        }
+    .main2{
+            border-radius: 50%;
+            width: 310px;
+            height:310px;
+            border: 50px solid rgba(0,0,0,255);
+            display: flex;
+            flex-wrap: wrap;
+            margin: auto;
+}
+        .main3{ 
+            border-radius: 50%;
+            width: 300px;
+            height:300px;
+            border: 6px solid rgba(133,133,133,255);
+            display: flex;
+            flex-wrap: wrap;
+            margin: auto;
+            background: black;
+        }
+        .item1{
+            border: 2px solid black;
+            border-top-left-radius: 100%;
+            width: 145px;
+            height: 145px;
+            background: rgba(49,138,182,255);
+            display: inline-block;
+        }
+        .item2{
+            border: 2px solid black;
+            border-top-right-radius: 100%;
+            width: 145px;
+            height:145px;
+            background: rgba(247,247,247,255);
+            display: inline-block;
+        }
+        .item3{
+            border: 2px solid black;
+            border-bottom-left-radius: 100%;
+            width: 145px;
+            height: 145px;
+            background: rgba(247,247,247,255);
+            display: inline-block;
+        }
+        .item4{
+            border: 2px solid black;
+            border-bottom-right-radius: 100%;
+            width: 145px;
+            height: 145px;
+            background: rgba(49,138,182,255);
+            display: inline-block;
+        }
+.letter {
+    color: white;
+    font-size: 50px;
+    position: absolute;
+}
+.letter.b {
+    top: 80px;
+    left: 590px;
+    transform: rotate(-50deg);
+}
+.letter.m {
+    top: 10px;
+    left: 720px;
+}
+.letter.w {
+    top: 80px;
+    right: 580px;
+    transform: rotate(-315deg);
+}
+    </style>
+</html>

@@ -1,0 +1,103 @@
+.main{
+    height: 85.6vh;
+    background-image: url("https://preview.colorlib.com/theme/travelo/img/banner/video.png.webp");
+    background-repeat: no-repeat;
+    background-size: 100% 120%;
+    display: flex;
+    flex-wrap: wrap;
+    animation: color 5s infinite;
+    position: relative;
+}
+.cloud1,.cloud2{
+    width: 300px;
+    height: 300px;
+}
+.sun{
+    width: 200px;
+    height: 200px;
+    border: none;
+    animation: move 5s infinite;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.b{
+    display: flex;
+    margin-left: 20%;
+}
+.cloud2{
+    margin: auto;
+    animation: left 5s infinite;
+    position: relative;
+    display: inline-block;
+}
+.cloud1{
+    animation: right 5s infinite;
+    position: relative;
+    display: inline-block;
+    margin: auto;
+}
+ 
+@keyframes left {
+    0%{
+        margin-left: 0%;
+    }
+    50%{
+        margin-right: -40%;
+    }
+    100%{
+        margin-left: -70%;
+    }
+}
+@keyframes right {
+    0%{
+        margin-left: 0%;
+    }
+   50%{
+       margin-right: 40%;
+   }
+    100%{
+        margin-left: 70%;
+    }
+}  
+@keyframes move {
+    0%{
+        margin-top: 0%;
+    }
+    100%{
+        margin-top: 8%;
+    }
+}  
+@keyframes color {
+    100%{
+       /* background: black; */
+        filter: brightness(4%);
+    }
+} 
+@media (max-width:800px){
+    .main,#il{
+      background-size: 1000%, 1000% ;
+    }
+}
+@media (max-width:800px){
+    .cloud1,.cloud2,#il{
+      width: 200px;
+      height: 200px;
+    }
+}
+@media(max-width:800px){
+    .sun,#li{
+        width: 100px;
+        height: 100px;
+    }
+}
+@media(max-width:800px){
+    .b,#li{
+        margin: auto;
+        margin-bottom: 100%;
+        margin-right: 40%;
+    }
+}

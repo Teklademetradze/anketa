@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+    <div class="x">
+        <input type="checkbox" id="chk">
+        <label for="chk">
+            <img class="humb" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAY1BMVEX///8AAADPz89LS0uWlpaPj4/4+PhfX1/29vawsLAdHR3b29v8/PzExMQzMzOEhIRzc3MPDw+hoaGysrLq6uo8PDwXFxfh4eFkZGRXV1fGxsZGRkaHh4fX19d6enqnp6e7u7sLhoRgAAAChUlEQVR4nO3di1LCQAyF4eWOCIgIqPWC7/+UWhm8jZNs2Z3JJP2/J8gZK+1u02xKAAAAAAAAAAAAAAAAABDfcjWZjfyYTVbLTvl2rwN/Nrv8gBPrYi80ycw33VtXerH9NCvgwbrOAoeciGvrKous9YA31jUWutEC3ltXWOxeSfhgXWCxBzng3Lq+CuZiwivr8iq4EhNurMurYCMm9H2rOJFvGNbVVdHzhJ6f2M4WYsJH6/IqeBQTel03/SSvoYbW5VUwFBOmW+v6it3KAdPRusBiRyVhWlhXWEj+JW29WJdY6EVN6PzhW71GW1vrKgtscwKm1FjXebEmL+DHOtjjhvDHskle+/7JOPa2abofd9jyPpleD/24ztoKBgAAAAAAAAAAPs2b49iPY9PlvVPrbWT9Lqmz0VuHfEOf7QoLpZPm27N1qRdT29hPZtZ1FpjlBPTdJiw3CH+6s66x0J0W0H+zvnbb8P7JzGDwLAdcWtdXgfyp5cq6vApWwS9S7ab4ZF1eBU9iQv8twlqTsHV1VfT8bxj//zD+b2n8+2GEZxoxoOfV75nyXBpgbaH20vr+GCFjfdiDNX4P9mk8/9povzJfwu+Xpvh73q3o7y0AAAAAAAAAAIAjwedE7cbeZiavO836mvt8050/r83vzD25WehL+LmJvme0Zsy+jD+/1GeTwjd1Bq3va7SlXaf+m4SVWdDx53nHn8kef65+hLMRDmJC6+qq6HlCb2um/8jnzPhcNv0mtwl77/JuyZ3e/lv11Q+Bw5+71oOz89x/25UxOML3DSPjDMsenEMa/yzZ5HcNlXsecHJ6pvNrtwMulo2zc7mbbudyAwAAAAAAAAAAAAAAAIBP7y86VZGfUH/eAAAAAElFTkSuQmCC" alt="">
+        </label>
+        <label for="chk" class="lb2">
+            <img class="humb2"  src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/High-contrast-dialog-close.svg/768px-High-contrast-dialog-close.svg.png" alt="">
+        </label>
+        <div class="menu">
+              <hr>
+              <ul>
+                  <li><a href="#">about</a></li>
+                  <li><a href="#">about</a></li>
+                  <li><a href="#">about</a></li>
+              </ul>
+        </div>
+      
+    </div>
+    <div class="main">
+        <div class="left">
+            <h1>header <i class="fas fa-phone fa-2x"></i></h1>
+        </div>
+        <div class="right">
+            <div class="im">
+                <button class="btn">button</button>
+            </div>
+        </div>
+    </div>
+</body>
+<style>
+    ul{
+        display: flex;
+    }
+    ul li a{
+        margin:10px;
+        text-decoration: none;
+        
+    }
+    ul li{
+        list-style-type: none;
+    }
+    .lb2{
+        width: 40px;
+        height: 40px;
+        margin-left: 0px;
+        transition: 0.7s;
+        margin-top:-40px;
+        visibility: hidden;
+        opacity: 0;
+    }
+    .lb2 img{
+        width: 40px;
+        height: 40px;
+        position: absolute;
+    }
+    #chk{
+        display: none;
+    }
+    #chk:checked ~ .lb2{
+        display: block !important;
+        margin-left: 250px;
+        visibility: visible;
+        opacity: 1;
+    }
+    #chk:checked ~ .menu{
+        visibility: visible;
+        margin-left: 0px;
+    }
+  
+    .menu{
+        width: 250px;
+        height: calc(100vh);
+        background: yellow;
+        position: fixed;
+        margin-top:-44px;
+        visibility: hidden;
+        margin-left: -250px;
+        transition: 0.5s;
+    }
+    .x .humb{
+         width: 40px;
+         height: 40px;
+     }
+    i{
+        color:red;
+    }
+    .x{
+        width: 100%;
+        background: grey;
+        height: 60px;
+        display: none;
+        position: fixed;
+        z-index: 1;
+    }
+    body{
+        margin:0;
+    }
+    .main{
+        display: flex;
+    }
+    .left{
+        width: 280px;
+        height: 100vh;
+        background: aqua;
+        position: fixed;
+        
+    }
+    .right{
+        width: calc(100% - 280px);
+        height: 1500px;
+        background: green;
+        margin-left: 280px;
+    }
+    .right .im{
+        width: 50%;
+        height: 400px;
+        background-size: 100% 100%;
+        margin:100px auto;
+        display: block;
+        background-image: url("https://images.unsplash.com/photo-1593642532400-2682810df593?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80");
+    }
+    .right .im{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .im .btn{
+        border:none;
+        padding: 10px 25px;
+        font-size: 20px;
+        color:black;
+        background:orange;
+        border-radius: 5px;
+        visibility: hidden;
+        transition: 0.5s;
+        opacity: 0;
+    }
+    .im:hover .btn{
+        visibility: visible;
+        opacity: 1;
+    }
+    .im:hover{
+        background-image: linear-gradient(135deg,rgba(57, 45, 230, 0.6),rgba(172, 9, 9, 0.6)),
+        url("https://images.unsplash.com/photo-1593642532400-2682810df593?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80");
+    }
+    @media screen and (max-width:1000px){
+        .left{
+            display: none;
+        }
+        .right{
+            width: 100%;
+            margin-left:0px;
+        }
+        .x{
+            display: block;
+        }
+ 
+    }
+</style>
+</html>

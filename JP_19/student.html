@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+    <input type="text" placeholder="Name" class="fname">
+    <br>
+    <input type="text" placeholder="Lastname" class="lname">
+    <br>
+    <label for="">Course</label>
+    <select name="" id="" class="course">
+        <option value="1">1</option>
+        <option value="2">2</option>
+    </select>
+    <button class="save">Save</button>
+    <div class="main">
+        <div>
+    <table class="tb1">
+        <tr>
+        <th>FirstName</th>
+        <th>LastName</th>
+        <th>Course</th>
+        <th>Mark</th>
+        <th id="res">result</th>
+    </tr>
+    </table>
+</div>
+<div>
+    <table class="tb2">
+        <tr>
+        <th>FirstName</th>
+        <th>LastName</th>
+        <th>Course</th>
+        <th>Mark</th>
+        <th id="res">result </th>
+    </tr>
+    </table>
+</div>
+<div>
+<div class="card">
+    
+</div>
+</div>
+</div>
+    <script src="student.js"></script>
+</body>
+<style>
+    .card{
+        padding: 20px;
+        border:2px solid black;
+        border-radius: 5px;
+    }
+    .main{
+        display: flex;
+        justify-content: space-around;
+    }
+    table{
+        width: 40%;
+        border-collapse: collapse;
+    }
+    td,th{
+        border:1px solid black;
+        padding: 10px;
+    }
+</style>
+</html>

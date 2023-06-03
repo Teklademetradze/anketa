@@ -1,0 +1,1390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <!-- <link rel="stylesheet" href="colorlib.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&family=Poppins:wght@100&display=swap" rel="stylesheet"> -->
+</head>
+<body style="background: whitesmoke !important;">
+    <nav style="z-index: 1 !important; position: fixed !important; width: 100%;">
+    <nav class="mainnav"> 
+        <img class="logo" src="data:image/webp;base64,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" alt="">
+        <a class="direngine" href="">+   DIRENGINE</a>
+        <div class="icons">
+        <div class="TVicon">
+            <a href=""><i class="fas fa-tv TV"></i></a>
+        </div>
+        <div class="TVicon">
+            <a href=""><i class="fas fa-tablet-alt TV"></i></a>
+        </div>
+        <div class="TVicon">
+            <a href=""><i class="fas fa-mobile-alt TV"></i></a>
+        </div>
+        <div class="carticon">
+            <a href=""><i class="fas fa-shopping-cart shop"></i></a>
+        </div>
+        <div class="Xicon">
+            <a href=""><i class="fas fa-times TV"></i></a>
+    </div>
+    </div>
+    </nav>
+</nav>
+<nav style="z-index: 1;">
+    <nav style=" z-index: 1 !important; box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 3%) !important;  background-color: white !important; position: fixed !important; width: 100% !important; margin-top: -55px !important;" class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a style="    color: #000000!important;font-weight: 700 !important;font-size: 20px !important;display: inline-block;margin-left: 10%!important;" class="navbar-brand" href="#">dirEngine.</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div style= " margin-left: 40%; align-items: center !important; " class="navbar-nav">
+                <a  style="    color: #f85959 !important; margin-left: 20px !important; " class="nav-link active" aria-current="page" href="#">Home</a>
+                <a style="font-size: 14px !important;color: #000000!important; margin-left: 20px !important; ;     font-weight: 400 !important;" class="nav-link" href="#">About</a>
+                <a style="font-size: 14px !important;color: #000000!important; margin-left: 20px !important; ;     font-weight: 400 !important;" class="nav-link" href="#">Tour</a>
+                <a style="font-size: 14px !important;color: #000000!important; margin-left: 20px !important; ;     font-weight: 400 !important;" class="nav-link disabled">Hotels</a>
+                <a style="font-size: 14px !important;color: #000000!important; margin-left: 20px !important; ;     font-weight: 400 !important;" class="nav-link disabled">Blog</a>
+                <a style="font-size: 14px !important;color: #000000!important; margin-left: 20px !important; ;     font-weight: 400 !important;" class="nav-link disabled">Contact</a>
+                <a style="margin-left: 20px !important; display: inline-block;" class="listening" href="D">Add listening</a>
+            </div> 
+          </div>
+        </div>
+      </nav>
+    </nav>
+
+
+
+
+    <nav class="mainnav2">
+        <div class="island">
+            <div class="text">
+                <div class="all">
+            <h1 class="explore">Explore</h1>
+            <h2 class="amazing">your amazing city</h1>
+            <p class="find">Find great places to stay, eat, shop, or visit from local experts</p>
+            <div class="input">
+            <input class="ex" type="s" placeholder="Ex:food, service, hotel">
+            <select class="place" name="x" id="x">
+                <option value="Where">Where</option>
+                <option value="">San Francisco USA</option>
+                <option value="D00">Berlin Germany</option>
+                <option value="l00">Londodn United Kingdom</option>
+                <option value="d">Paris Italy</option>
+            </select>
+            <input type="submit" class="search" value="Search">
+        </div>
+        <p class="find">Or browse the highlights</p>
+            <div class="href">
+                <a class="hotel" href="d"> <i class="fas fa-utensils ic"></i> Restaurant</a>
+                <a class="hotel" href="d"> <i class="fas fa-hotel ic"></i> Hotel</a>
+                <a class="hotel" href="d"> <i class="fas fa-map-marked-alt ic"></i>  Places</a>
+                <a class="hotel" href="d"> <i class="fas fa-shopping-bag ic"></i> Shopping</a>
+            </div>
+        </div>
+        </div>
+    </div>
+    </nav>
+    <div class="card7">
+        <div class="maincard5">
+            <i class="fas fa-award heart"></i>
+            <div class="paragraph">
+        <h1 class="best">Best Price Guarantee</h1>
+        <p class="river">A small river named Duden flows by their place and supplies.</p> 
+    </div>
+    </div>
+    <div class="maincard5">
+        <i class="far fa-heart heart"></i>
+        <div class="paragraph">
+            <h1 class="best">Travellers Love Us</h1>
+            <p class="river">A small river named Duden flows by their place and supplies.</p> 
+</div>
+</div>
+<div class="maincard5">
+    <i class="fas fa-passport heart"></i>
+    <div class="paragraph">
+        
+<h1 class="best">Best Travel Agent</h1>
+<p class="river">A small river named Duden flows by their place and supplies.</p> 
+</div>
+</div>
+<div class="maincard5">
+    <i class="fas fa-plane heart"></i>
+    <div class="paragraph">
+<h1 class="best">Our Dedicated Support</h1>
+<p class="river">A small river named Duden flows by their place and supplies.</p> 
+</div>
+</div>
+    </div>
+
+<div  class="carousel">
+    <div style="margin-left: 50px;">
+    <p    class="Featured">Featured</p>
+    <span class="Featured2">Featured </span>
+    <span class="des">Destination</span>
+</div>
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-evenly; margin-top: 50px;" class="countries">
+        <div class="card" style="width: 18rem;">
+            <img style="height: 300px !important;" src="https://preview.colorlib.com/theme/direngine/images/xdestination-1.jpg.pagespeed.ic.cH7KihJSx6.webp" class="card-img-top" alt="...">
+            <i class="fas fa-search searchicon"></i>
+            <div class="card-body">
+                <p class="USA">Paris,Italy</p>
+                <p class="listing">15 Listing</p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img style="height: 300px !important;" src="https://preview.colorlib.com/theme/direngine/images/xdestination-2.jpg.pagespeed.ic.RMg1c-upbN.webp" class="card-img-top" alt="...">
+            <i class="fas fa-search searchicon"></i>
+            <div class="card-body">
+                <p class="USA">San Francisco, USA</p>
+                <p class="listing">20 Listing</p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            
+            <img style="height: 300px !important;" src="https://preview.colorlib.com/theme/direngine/images/xdestination-3.jpg.pagespeed.ic.pZRu_A4i4S.webp" class="card-img-top" alt="...">
+            <i class="fas fa-search searchicon"></i>
+            <div class="card-body">
+                <p class="USA">London, UK</p>
+                <p class="listing">10 Listing</p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img style="height: 300px !important;" src="https://preview.colorlib.com/theme/direngine/images/xdestination-4.jpg.pagespeed.ic.pd6qhEzxyK.webp" class="card-img-top" alt="...">
+            <i class="fas fa-search searchicon"></i>
+            <div class="card-body">
+                <p class="USA">Lion, Sigapore</p>
+                <p class="listing">3 Listing</p>
+            </div>
+          </div>
+    </div>
+</div>
+
+
+
+<div  class="stars"></div>
+<div style="margin-left: 100px;">
+    <p    class="Featured">Special Offers</p>
+    <span class="Featured2">Top </span>
+    <span class="des">Tour Packages</span>
+</div>
+<div style="display: flex; justify-content: space-around; margin-top: 5%; flex-wrap: wrap;">
+    <div class="card" style="width: 15rem;">
+        <img style="height: 200px !important;" src="https://preview.colorlib.com/theme/direngine/images/xdestination-1.jpg.pagespeed.ic.cH7KihJSx6.webp" class="card-img-top" alt="...">
+        <i class="fas fa-search searchicon2"></i>
+        <div class="card-body">
+          <h5 class="card-title">Paris, Italy</h5>
+          <i style="font-size: 10px; color: #f85959;" class="fas fa-star"></i>
+          <i style="font-size: 10px; color: #f85959;" class="fas fa-star"></i>
+          <i style="font-size: 10px; color: #f85959;" class="fas fa-star"></i>
+          <i style="font-size: 10px; color: #f85959;" class="fas fa-star"></i>
+          <i style="font-size: 10px; color: #f85959;" class="far fa-star"></i>
+          <p class="card-text">Far far away, behind the word mountains, far from the countries</p>
+          <p>2 days 3 nights</p>
+          <hr>
+            <span> San Franciso, CA</span>
+            <a style="background: #8bc34a;
+            color: #fff;     border-radius: 4px;
+    padding: 3px 5px;" href="a">Discover</a>
+
+        </div>
+      </div>
+      <div class="card" style="width: 15rem;">
+        <img  style="height: 200px !important;" src="https://preview.colorlib.com/theme/direngine/images/xdestination-2.jpg.pagespeed.ic.RMg1c-upbN.webp" class="card-img-top" alt="...">
+        <i class="fas fa-search searchicon2"></i>
+        <div class="card-body">
+            <h5 class="card-title">Paris, Italy</h5>
+            <i style="font-size: 10px; color: #f85959;" class="fas fa-star"></i>
+            <i style="font-size: 10px; color: #f85959;" class="fas fa-star"></i>
+            <i style="font-size: 10px; color: #f85959;" class="fas fa-star"></i>
+            <i style="font-size: 10px; color: #f85959;" class="fas fa-star"></i>
+            <i style="font-size: 10px; color: #f85959;" class="far fa-star"></i>
+            <p class="card-text">Far far away, behind the word mountains, far from the countries</p>
+            <p>2 days 3 nights</p>
+            <hr>
+              <span> San Franciso, CA</span>
+              <a style="background: #8bc34a;
+              color: #fff;     border-radius: 4px;
+      padding: 3px 5px;" href="a">Discover</a>
+  
+          </div>
+      </div>
+
+      <div class="card" style="width: 15rem;">
+        <img  style="height: 200px !important;" src="https://preview.colorlib.com/theme/direngine/images/xdestination-3.jpg.pagespeed.ic.pZRu_A4i4S.webp" class="card-img-top" alt="...">
+        <i class="fas fa-search searchicon2"></i>
+        <div class="card-body">
+            <h5 class="card-title">Paris, Italy</h5>
+            <i style="font-size: 10px; color: #f85959;" class="fas fa-star"></i>
+            <i style="font-size: 10px; color: #f85959;" class="fas fa-star"></i>
+            <i style="font-size: 10px; color: #f85959;" class="fas fa-star"></i>
+            <i style="font-size: 10px; color: #f85959;" class="fas fa-star"></i>
+            <i style="font-size: 10px; color: #f85959;" class="far fa-star"></i>
+            <p class="card-text">Far far away, behind the word mountains, far from the countries</p>
+            <p>2 days 3 nights</p>
+            <hr>
+              <span> San Franciso, CA</span>
+              <a style="background: #8bc34a;
+              color: #fff;     border-radius: 4px;
+      padding: 3px 5px;" href="a">Discover</a>
+  
+          </div>
+      </div>
+<div class="card" style="width: 15rem;">
+        <img  style="height: 200px !important;" src="https://preview.colorlib.com/theme/direngine/images/xdestination-4.jpg.pagespeed.ic.pd6qhEzxyK.webp" class="card-img-top" alt="...">
+        <i class="fas fa-search searchicon2"></i>
+        <div class="card-body">
+            <h5 class="card-title">Paris, Italy</h5>
+            <i style="font-size: 10px; color: #f85959;" class="fas fa-star"></i>
+            <i style="font-size: 10px; color: #f85959;" class="fas fa-star"></i>
+            <i style="font-size: 10px; color: #f85959;" class="fas fa-star"></i>
+            <i style="font-size: 10px; color: #f85959;" class="fas fa-star"></i>
+            <i style="font-size: 10px; color: #f85959;" class="far fa-star"></i>
+            <p class="card-text">Far far away, behind the word mountains, far from the countries</p>
+            <p>2 days 3 nights</p>
+            <hr>
+              <span> San Franciso, CA</span>
+              <a style="background: #8bc34a;
+              color: #fff;     border-radius: 4px;
+      padding: 3px 5px;" href="a">Discover</a>
+  
+          </div>
+      </div>
+      <div class="card" style="width: 15rem;">
+        <img  style="height: 200px !important;" src="https://preview.colorlib.com/theme/direngine/images/xdestination-5.jpg.pagespeed.ic.xeSzPVaEqR.webp" class="card-img-top" alt="...">
+        <i class="fas fa-search searchicon2"></i>
+        <div class="card-body">
+            <h5 class="card-title">Paris, Italy</h5>
+            <i style="font-size: 10px; color: #f85959;" class="fas fa-star"></i>
+            <i style="font-size: 10px; color: #f85959;" class="fas fa-star"></i>
+            <i style="font-size: 10px; color: #f85959;" class="fas fa-star"></i>
+            <i style="font-size: 10px; color: #f85959;" class="fas fa-star"></i>
+            <i style="font-size: 10px; color: #f85959;" class="far fa-star"></i>
+            <p class="card-text">Far far away, behind the word mountains, far from the countries</p>
+            <p>2 days 3 nights</p>
+            <hr>
+              <span> San Franciso, CA</span>
+              <a style="background: #8bc34a;
+              color: #fff;     border-radius: 4px;
+      padding: 3px 5px;" href="a">Discover</a>
+    
+          </div>
+      </div>
+    </div>
+<div class="background">
+    <div style="padding-top: 5%;" class="some">
+    <p class="facts">Some fun facts</p>
+    <br>
+    <p class="hosted">More than 100,000 websites hosted</p>
+</div>
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; margin-top: 10%;" >
+    <div class="happy">
+        <p class="number">100,000 </p>
+        <p class="customers">Happy Customers</p>
+    </div>
+    <div class="happy">
+        <p class="number">40,000 </p>
+        <p class="customers">Destination Places</p>
+    </div>
+    <div class="happy">
+        <p class="number">87,000 </p>
+        <p class="customers">Hotels</p>
+    </div>
+    <div class="happy">
+        <p class="number">56,400</p>
+        <p class="customers">Restaurant</p>
+    </div>
+    </div>
+</div>
+</div>
+
+
+
+
+<div  class="stars"></div>
+<div style="margin-left: 100px;">
+    <p    class="Featured">Special Offers</p>
+    <span class="Featured2">Popular</span>
+    <span class="des">Hotels & Rooms</span>
+</div>
+<div style="display: flex; justify-content: space-around; margin-top: 5%; flex-wrap: wrap;">
+
+
+
+    <div class="card" style="width: 15rem;">
+        <i class="fas fa-search searchicon2"></i>
+        <img style="height: 200px !important;" src="https://preview.colorlib.com/theme/direngine/images/xhotel-1.jpg.pagespeed.ic.KgiKvDlwUH.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Hotel, Italy</h5>
+          <i style="font-size: 10px; color: #f85959;" class="fas fa-star"></i>
+          <i style="font-size: 10px; color: #f85959;" class="fas fa-star"></i>
+          <i style="font-size: 10px; color: #f85959;" class="fas fa-star"></i>
+          <i style="font-size: 10px; color: #f85959;" class="fas fa-star"></i>
+          <i style="font-size: 10px; color: #f85959;" class="far fa-star"></i>
+          <p class="card-text">Far far away, behind the word mountains, far from the countries</p>
+          <p>2 days 3 nights</p>
+          <hr>
+            <span> Miami, Fi</span>
+            <a style="background: #8bc34a;
+            color: #fff;     border-radius: 4px;
+    padding: 3px 5px;" href="a">Book Now</a>
+
+        </div>
+      </div>
+
+
+      <div class="card" style="width: 15rem;">
+        <img  style="height: 200px !important;" src="https://preview.colorlib.com/theme/direngine/images/xhotel-2.jpg.pagespeed.ic.QvVojGaMgS.webp" class="card-img-top" alt="...">
+        <i class="fas fa-search searchicon2"></i>
+        <div class="card-body">
+            <h5 class="card-title">Hotel, Italy</h5>
+            <i style="font-size: 10px; color: #f85959;" class="fas fa-star"></i>
+            <i style="font-size: 10px; color: #f85959;" class="fas fa-star"></i>
+            <i style="font-size: 10px; color: #f85959;" class="fas fa-star"></i>
+            <i style="font-size: 10px; color: #f85959;" class="fas fa-star"></i>
+            <i style="font-size: 10px; color: #f85959;" class="far fa-star"></i>
+            <p class="card-text">Far far away, behind the word mountains, far from the countries</p>
+            <p>2 days 3 nights</p>
+            <hr>
+              <span> Miami, Fi</span>
+              <a style="background: #8bc34a;
+              color: #fff;     border-radius: 4px;
+      padding: 3px 5px;" href="a">Book Now</a>
+  
+          </div>
+      </div>
+
+      <div class="card" style="width: 15rem;">
+        <img  style="height: 200px !important;" src="https://preview.colorlib.com/theme/direngine/images/xhotel-3.jpg.pagespeed.ic.yYa1xfQlzF.webp" class="card-img-top" alt="...">
+        <i class="fas fa-search searchicon2"></i>
+        <div class="card-body">
+            <h5 class="card-title">Hotel, Italy</h5>
+            <i style="font-size: 10px; color: #f85959;" class="fas fa-star"></i>
+            <i style="font-size: 10px; color: #f85959;" class="fas fa-star"></i>
+            <i style="font-size: 10px; color: #f85959;" class="fas fa-star"></i>
+            <i style="font-size: 10px; color: #f85959;" class="fas fa-star"></i>
+            <i style="font-size: 10px; color: #f85959;" class="far fa-star"></i>
+            <p class="card-text">Far far away, behind the word mountains, far from the countries</p>
+            <p>2 days 3 nights</p>
+            <hr>
+              <span> Miami, Fi</span>
+              <a style="background: #8bc34a;
+              color: #fff;     border-radius: 4px;
+      padding: 3px 5px;" href="a">Book Now</a>
+  
+          </div>
+      </div>
+<div class="card" style="width: 15rem;">
+        <img  style="height: 200px !important;" src="https://preview.colorlib.com/theme/direngine/images/xhotel-4.jpg.pagespeed.ic.KSjKpvxgch.webp" class="card-img-top" alt="...">
+        <i class="fas fa-search searchicon2"></i>
+        <div class="card-body">
+            <h5 class="card-title">Hotel, Italy</h5>
+            <i style="font-size: 10px; color: #f85959;" class="fas fa-star"></i>
+            <i style="font-size: 10px; color: #f85959;" class="fas fa-star"></i>
+            <i style="font-size: 10px; color: #f85959;" class="fas fa-star"></i>
+            <i style="font-size: 10px; color: #f85959;" class="fas fa-star"></i>
+            <i style="font-size: 10px; color: #f85959;" class="far fa-star"></i>
+            <p class="card-text">Far far away, behind the word mountains, far from the countries</p>
+            <p>2 days 3 nights</p>
+            <hr>
+              <span> Miami, Fi</span>
+              <a style="background: #8bc34a;
+              color: #fff;     border-radius: 4px;
+      padding: 3px 5px;" href="a">Book Now</a>
+  
+          </div>
+      </div>
+      <div class="card" style="width: 15rem;">
+        <img  style="height: 200px !important;" src="https://preview.colorlib.com/theme/direngine/images/xhotel-5.jpg.pagespeed.ic.xzzqlNbwut.webp" class="card-img-top" alt="...">
+        <i class="fas fa-search searchicon2"></i>
+        <div class="card-body">
+            <h5 class="card-title">Hotel, Italy</h5>
+            <i style="font-size: 10px; color: #f85959;" class="fas fa-star"></i>
+            <i style="font-size: 10px; color: #f85959;" class="fas fa-star"></i>
+            <i style="font-size: 10px; color: #f85959;" class="fas fa-star"></i>
+            <i style="font-size: 10px; color: #f85959;" class="fas fa-star"></i>
+            <i style="font-size: 10px; color: #f85959;" class="far fa-star"></i>
+            <p class="card-text">Far far away, behind the word mountains, far from the countries</p>
+            <p>2 days 3 nights</p>
+            <hr>
+              <span> Miami, Fi</span>
+              <a style="background: #8bc34a;
+              color: #fff;     border-radius: 4px;
+      padding: 3px 5px;" href="a">Book Now</a>
+    
+          </div>
+      </div>
+    </div>
+
+
+
+
+<div style="display: flex; flex-wrap: wrap;" class="maindiv"> 
+    <div class="subdiv">
+        <p class="directory">Best Directory Website</p>
+        <span class="why">Why </span>
+        <span class="us">Choose Us?</span>
+        <p class="lorem">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+        <p class="lorem">Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life.</p>
+        <a class="more" href="s">Read more</a>
+    </div>
+ <div  style="width: 40%; margin-left: 10%;">
+    <p class="directory">Testimony</p>
+    <span class="why">Our</span>
+    <span class="us">Guests Says</span>
+    
+<div  style="z-index: 0; box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 3%) !important; margin: 0; margin-top: 5%; background-color: white; height: 25vh!important; display: flex; align-items: center; justify-content: center;" ui id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div style="margin-left: 20px;" class="carousel-inner">
+    <div class="carousel-item active">
+    <img style="width: 120px; height: 120px; border-radius: 50%;" src="https://preview.colorlib.com/theme/direngine/images/xperson_2.jpg.pagespeed.ic.Xrdu_nPZRp.webp" alt="">
+      <div  style="height: 10vh!important;" class="carousel-caption d-none d-md-block">
+        
+        <p style="margin-left: 20px; color: black;">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+        <!-- <h6 style="margin-left: 20px; color: black;">Dennis Green</h6> -->
+        <!-- <h5>Guest from London</h5> -->
+      </div>
+    </div>
+    <div class="carousel-item">
+        <img style="width: 120px; height: 120px; border-radius: 50%;" src="https://preview.colorlib.com/theme/direngine/images/xperson_3.jpg.pagespeed.ic.Cln-jaM1jK.webp" alt="">
+        <div  style="height: 10vh!important;" class="carousel-caption d-none d-md-block">
+          
+          <p style="margin-left: 20px; color: black;">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+          <!-- <h6 style="margin-left: 20px; color: black;">Dennis Green</h6> -->
+          <!-- <h5>Guest from London</h5> -->
+        </div>
+    </div>
+    <div class="carousel-item">
+        <img style="width: 120px; height: 120px; border-radius: 50%;" src="https://preview.colorlib.com/theme/direngine/images/xperson_1.jpg.pagespeed.ic.a2MnMHMs44.webp" alt="">
+        <div  style="height: 10vh!important;" class="carousel-caption d-none d-md-block">
+          
+          <p style="margin-left: 20px; color: black;">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+          <!-- <h6 style="margin-left: 20px; color: black;">Dennis Green</h6> -->
+          <!-- <h5>Guest from London</h5> -->
+        </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+   
+</div>
+
+
+<div  class="stars"></div>
+<div style="margin-left: 100px;">
+    <p    class="Featured">Special Offers</p>
+    <span class="Featured2">Popular</span>
+    <span class="des">Restaurants</span>
+</div>
+<div style="display: flex; justify-content: space-around; margin-top: 5%; flex-wrap: wrap;">
+    <div class="card" style="width: 18rem;">
+        <img style="height: 200px !important;" src="https://preview.colorlib.com/theme/direngine/images/xrestaurant-1.jpg.pagespeed.ic.LnJla8Illi.webp" class="card-img-top" alt="...">
+        <i class="fas fa-search searchicon2"></i>
+        <div class="card-body">
+          <h5 class="card-title">Luxury Restaurant</h5>
+          <i style="font-size: 10px; color: #f85959;" class="fas fa-star"></i>
+          <i style="font-size: 10px; color: #f85959;" class="fas fa-star"></i>
+          <i style="font-size: 10px; color: #f85959;" class="fas fa-star"></i>
+          <i style="font-size: 10px; color: #f85959;" class="fas fa-star"></i>
+          <i style="font-size: 10px; color: #f85959;" class="far fa-star"></i>
+          <p class="card-text">Far far away, behind the word mountains, far from the countries</p>
+          <p>2 days 3 nights</p>
+          <hr>
+            <span>San Franciso, CA</span>
+            <a style="background: #8bc34a;
+            color: #fff;     border-radius: 4px;
+    padding: 3px 5px;" href="a">Book Now</a>
+
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <i class="fas fa-search searchicon2"></i>
+        <img  style="height: 200px !important;" src="https://preview.colorlib.com/theme/direngine/images/xrestaurant-2.jpg.pagespeed.ic.TTJgOEUq6a.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Luxury Restaurant</h5>
+            <i style="font-size: 10px; color: #f85959;" class="fas fa-star"></i>
+            <i style="font-size: 10px; color: #f85959;" class="fas fa-star"></i>
+            <i style="font-size: 10px; color: #f85959;" class="fas fa-star"></i>
+            <i style="font-size: 10px; color: #f85959;" class="fas fa-star"></i>
+            <i style="font-size: 10px; color: #f85959;" class="far fa-star"></i>
+            <p class="card-text">Far far away, behind the word mountains, far from the countries</p>
+            <p>2 days 3 nights</p>
+            <hr>
+              <span> San Franciso, CA</span>
+              <a style="background: #8bc34a;
+              color: #fff;     border-radius: 4px;
+      padding: 3px 5px;" href="a">Book Now</a>
+  
+          </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img  style="height: 200px !important;" src="https://preview.colorlib.com/theme/direngine/images/xrestaurant-3.jpg.pagespeed.ic.U75GmIY7lJ.webp" class="card-img-top" alt="...">
+        <i class="fas fa-search searchicon2"></i>
+        <div class="card-body">
+            <h5 class="card-title">Luxury Restaurant</h5>
+            <i style="font-size: 10px; color: #f85959;" class="fas fa-star"></i>
+            <i style="font-size: 10px; color: #f85959;" class="fas fa-star"></i>
+            <i style="font-size: 10px; color: #f85959;" class="fas fa-star"></i>
+            <i style="font-size: 10px; color: #f85959;" class="fas fa-star"></i>
+            <i style="font-size: 10px; color: #f85959;" class="far fa-star"></i>
+            <p class="card-text">Far far away, behind the word mountains, far from the countries</p>
+            <p>2 days 3 nights</p>
+            <hr>
+              <span> San Franciso, CA</span>
+              <a style="background: #8bc34a;
+              color: #fff;     border-radius: 4px;
+      padding: 3px 5px;" href="a">Book Now</a>
+  
+          </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img  style="height: 200px !important;" src="https://preview.colorlib.com/theme/direngine/images/xrestaurant-3.jpg.pagespeed.ic.U75GmIY7lJ.webp" class="card-img-top" alt="...">
+        <i class="fas fa-search searchicon2"></i>
+        <div class="card-body">
+            <h5 class="card-title">Luxury Restaurant</h5>
+            <i style="font-size: 10px; color: #f85959;" class="fas fa-star"></i>
+            <i style="font-size: 10px; color: #f85959;" class="fas fa-star"></i>
+            <i style="font-size: 10px; color: #f85959;" class="fas fa-star"></i>
+            <i style="font-size: 10px; color: #f85959;" class="fas fa-star"></i>
+            <i style="font-size: 10px; color: #f85959;" class="far fa-star"></i>
+            <p class="card-text">Far far away, behind the word mountains, far from the countries</p>
+            <p>2 days 3 nights</p>
+            <hr>
+              <span> San Franciso, CA</span>
+              <a style="background: #8bc34a;
+              color: #fff;     border-radius: 4px;
+      padding: 3px 5px;" href="a">Book Now</a>
+  
+          </div>
+</div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div  class="stars"></div>
+      <div style="margin-left: 100px;">
+          <p    class="Featured">Recent Blog</p>
+          <span class="Featured2">Tips</span>
+          <span class="des">& Articles</span>
+      </div>
+      <div style="display: flex; justify-content: space-around; margin-top: 5%; flex-wrap: wrap;">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+          <div class="card" style="width: 18rem;">
+              <img style="height: 200px !important;" src="https://preview.colorlib.com/theme/direngine/images/ximage_1.jpg.pagespeed.ic.dkgdif6kRI.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <p>Tips, Travel</p>
+        
+                <h5>8 Best homestay in Philippines that you don't miss out</h5>
+        <br>
+                <span>August 12, 2018 Admin</span>
+              </div>
+            </div>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+            <div class="card" style="width: 18rem;">
+                <img style="height: 200px !important;" src="https://preview.colorlib.com/theme/direngine/images/ximage_2.jpg.pagespeed.ic.9oZjwXrMn5.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+
+                    <p>culture</p>
+                  <h5>Even the all-powerful Pointing has no control about the blind texts</h5>
+                  <br>
+                  <span>August 12, 2018 Admin</span>
+                </div>
+              </div>
+      
+      
+      
+      
+      
+      
+            
+              <div class="card" style="width: 18rem;">
+                <img style="height: 200px !important;" src="https://preview.colorlib.com/theme/direngine/images/ximage_3.jpg.pagespeed.ic.juyryIQIsn.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+
+                    <p>Tips, Travel</p>
+                  <h5>Even the all-powerful Pointing has no control about the blind texts</h5>
+                  <br>
+                  <span>August 12, 2018 Admin</span>
+                </div>
+              </div>
+            
+        
+                
+      
+      
+                
+            
+            <div class="card" style="width: 18rem;">
+                <img style="height: 200px !important;" src="https://preview.colorlib.com/theme/direngine/images/ximage_4.jpg.pagespeed.ic.3OCtSzlCzL.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+
+                    <p>culture</p>
+                  <h5>Even the all-powerful Pointing has no control about the blind texts</h5>
+                  <br>
+                  <span>August 12, 2018 Admin</span>
+                </div>
+              </div>
+      
+      
+            </div>
+            </div>
+            </div>
+            <div class="last">
+                <div class="x">
+                <h1 class="new">Subcribe to our Newsletter</h1>
+                <h5 class="far12">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in</h5>
+                <div class="y">
+                <input class="email" type="text" placeholder="Enter email address">
+                <a class="subscribe" href="su"> <span class="s"> Subscribe </span></a>
+            </div>    
+            </div>
+            </div>
+      
+
+
+
+
+
+            <div class="lastitem">
+                           
+                <div class="div1">
+                    <p class="dir">dirEngine</p>
+                    <p class="far10">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                <br>
+                <i class="fab fa-twitter tw"></i>
+                <i class="fab fa-facebook-f tw"></i>
+                <i class="fab fa-instagram tw"></i>
+                </div>
+                <div class="div2">
+                    <p class="dir">Information</p>
+
+                        <a class="a1" href="s">About</a>
+                        <br>
+                        <br>
+                        <a class="a1" href="s">Service</a>
+                        <br>
+                        <br>
+                        <a class="a1" href="s">Terms and Conditions</a>
+                        <br>
+                        <br>
+                        <a class="a1" href="s">Become a Partner</a>
+                        <br>
+                        <br>
+                        <a class="a1" href="s">Best Prize Guarantee</a>
+                        <br>
+                        <br>
+                        <a class="a1" href="s">Privacy and Policy</a>
+                </div>
+                <div class="div2">
+                    <p class="dir">Customer Support</p>
+    
+                        <a class="a1" href="s">FAQ</a>
+                        <br>
+                        <br>
+                        <a class="a1" href="s">Payment Option</a>
+                        <br>
+                        <br>
+                        <a class="a1" href="s">Booking Tips</a>
+                        <br>
+                        <br>
+                        <a class="a1" href="s">How it orks</a>
+                        <br>
+                        <br>
+                        <a class="a1" href="s">Contact us</a>
+                        <br>
+                        <br>
+    
+            </div>
+            <div class="div1">
+                <p class="dir">Have a Questions?</p>
+                <p class="far10"><i class="fas fa-map-marker m"></i>203 Fake St. Mountain View, San Francisco, California, USA</p>
+                <p class="far10"><i class="fas fa-phone m"></i>+2 392 3929 210</p>
+                <p class="far10"><i class="fas fa-envelope-square m"></i>	info@yourdomain.com</p>
+</div>
+     
+<div>
+    <p class="far10">Copyright ©2022 All rights reserved <i><i class="fas fa-heart"></i></i> This template is made with  by Colorlib</p>
+</div>    
+</div>   
+</div>
+            
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+<style>body{
+    margin: 0%;
+    background-color: whitesmoke !important;
+}
+.mainnav{
+    width: 100%;
+    position: fixed;
+    background: #333333;
+    border-bottom: 1px solid #444;
+    height: 60px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -115px;
+}
+.logo{
+    height: 30px;
+    width: auto;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+.london{
+    height: 20%;
+}
+.shop{
+    color: #fff;
+}
+.direngine{
+    color: #9b9b9b;
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 50px;
+    max-height: 60px;
+    padding: 5px 40px 5px 40px;
+    text-decoration: none;
+    font-family: 'Open Sans',sans-serif;
+    background-color: #222222;
+    margin-left: 20px;
+    z-index: 1;
+}
+.direngine:hover{
+    color: #9b9b9b;
+}
+.TV{
+    color: #9b9b9b;
+    /* position: absolute; */
+    top: 18px;
+    padding: 50 50;
+}
+.icons{
+    margin-left: 79%;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin: 0%;
+    z-index: 1;
+}
+.TVicon,.carticon{
+    border-left: 1px solid #444;
+    display: block;
+    font-size: 20px;
+    height: 60px;
+    width: 60px;
+    border-right: 1px solid #444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carticon{
+    background-color: #7ac64d !important;
+}
+.cart{
+    color: white;
+}
+a:hover{
+    text-decoration: none;
+}
+.Xicon{
+    font-size: 24px;
+    height: 60px;
+    padding: 0;
+    width: 60px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.island{
+    background-image: url("https://preview.colorlib.com/theme/direngine/images/xbg_1.jpg.pagespeed.ic.-pmz16MBLM.webp"); 
+    height: 85.5vh;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    /* display: flex;
+    flex-wrap: wrap; */
+    margin-top: 115px;
+}
+.listening{
+    display: inline-block; background: #f85959;
+    border: none !important;
+    padding-top: 0.5rem !important;
+    padding-bottom: .5rem !important;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #fff !important; 
+    text-decoration: none;
+    border-radius: 50px;
+}
+.explore{
+    font-weight: 800;
+    font-size: 60px;
+    color: #fff;
+    line-height: 1.2;
+    font-family: inherit;
+    margin-left: 10px;
+}
+.amazing{
+    font-size: 60px;
+    color: #fff;
+    line-height: 1.2;
+    font-family: inherit;
+    margin-left: 10px;
+}
+.find{
+    margin-top: 2%;
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.8);
+    margin-left: 10px;
+}
+.ex{
+    margin-left: 10px;
+    box-shadow: none !important;
+    /* background: #fff !important; */
+    color: #4d4d4d !important;
+    /* border: 2px solid rgba(0, 0, 0, 0.1); */
+    font-size: 14px;
+    width: 20%;
+    height: 70px !important;
+    /* bordeR: 0.5px solid lightgray; */
+    padding: 10px 30px;
+    bordeR-left: 1px solid lightgray;
+    bordeR-top: none;
+    border-bottom: none;
+    border-right: none;
+}
+.text{
+    width: 100%;
+    margin: 0;
+}
+.all{
+    margin-left: 10%;
+    margin-top: 5%;
+}
+.place{
+    box-shadow: none !important;
+    /* border: transparent; */
+    /* background: #fff !important; */
+    color: #4d4d4d !important;
+    /* border: 2px solid rgba(0, 0, 0, 0.1); */
+    font-size: 14px;
+    width: 20%;
+    height: 70px !important;
+    bordeR-left: 1px solid lightgray;
+    bordeR-top: none;
+    border-bottom: none;
+    border-right: none;
+    padding: 10px 30px;
+}
+input,select:focus {
+    outline-color: transparent;
+}
+.input{
+    display: flex;
+    align-items: center;
+}
+.search{
+    width: 160px;
+    background: #f85959;
+    border: 1px solid #f85959;
+    color: #fff;
+    padding: 12px 10px;
+    display: inline-block;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    text-decoration: none;
+    height: 70px !important;
+}
+.hotel{
+    color: rgb(0, 0, 0);
+    padding: 10px 15px;
+    background: rgb(255, 255, 255);
+    border-radius: 2px;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.hotel:hover{
+    color: rgb(255, 255, 255);
+    background-color: #f85959;
+    transition: 0.5s;
+    text-decoration: none;
+}
+.href{
+    display: flex;
+    flex-wrap: wrap;
+}
+.icons2{
+    font-family: Flaticon;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+}
+.card7{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    width: 100%;
+    /* justify-content: space-around; */
+
+}
+.best{
+    font-size: 20px;
+    line-height: 1.5;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+}
+.river{
+    font-size: 16px;
+    margin-top: 0px;
+    margin-bottom: 1rem;
+    color: gray;
+}
+.maincard5{
+    font-family: Poppins, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.8;
+    font-weight: 300;
+    color: rgb(77, 77, 77);
+    width: 18%;
+    height: 40vh;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 3%);
+    margin-top: -2%;
+    margin-left: 50px;
+}
+
+.maincard5:hover .best{
+    /* background: #f85959; */
+    color: #fff;
+    transition: 0.5s;
+}
+
+.maincard5:hover .heart{
+    /* background: #f85959; */
+    color: #fff;
+    transition: 0.5s;
+}
+.maincard5:hover .heart{
+    /* background: #f85959; */
+    color: #fff;
+    transition: 0.5s;
+}
+.maincard5:hover .river{
+    /* background: #f85959; */
+    color: #fff;
+    transition: 0.5s;
+}
+.maincard5:hover{
+    background: #f85959;
+    transition: 0.5s;
+}
+.paragraph{
+    margin-top: -20%;
+}
+.TVicon:hover .TV{
+    color: #fff;
+}
+.Xicon:hover .TV{
+    color: #fff;
+}
+.Xicon:hover{
+    background-color: #222222;
+}
+.carticon:hover{
+    background: #222222 !important;
+}
+.heart{
+    color: #f85959;
+    font-size: 60px;
+    /* margin-top: -100%; */
+    margin-right: 40%;
+}
+.Featured{
+    font-family: "Poppins", Arial, sans-serif;
+}
+.Featured2{
+    font-size: 30px;
+    line-height: 1.5;
+    color: #000000;
+}
+.des{
+    font-size: 30px;
+    font-weight: 300;
+    color: #000000;
+}
+.carousel{
+    margin-left: 3%;
+    margin-top: 10%;
+}
+.USA{
+    color: #000000;
+}
+.TVicon:hover{
+    background-color: #222222;
+}
+.listing{
+    font-size: 14px;
+}
+.stars{
+    margin-top: 10%;
+}
+.background{
+    /* margin-top: 10%; */
+    background-image: url("https://preview.colorlib.com/theme/direngine/images/xbg_1.jpg.pagespeed.ic.-pmz16MBLM.webp"); 
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin-top: 10%;
+}
+.facts{
+    font-size: 40px;
+    color: #fff;
+}
+.hosted{
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 14px;
+    display: block;
+    margin-bottom: 10px;
+}
+.number{
+    font-weight: 400;
+    font-size: 30px;
+    color: #fff;
+}
+.happy{
+    margin-left: 80px;
+}
+.customers{
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+
+}
+.some{
+    margin-top: 5%;
+}
+.subdiv{
+    width: 30%;
+    margin-left: 10%;
+}
+.maindiv{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10%;
+}
+.directory{
+    font-size: 14px;
+    display: block;
+    margin-bottom: 10px;
+}
+.why{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1.5;
+    color: #000;
+}
+.us{
+    font-size: 30px;
+    font-weight: 300;
+}
+.lorem{
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-family: "Poppins",Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.8;
+    font-weight: 300;
+   
+}
+.more{
+    border: 1px solid #f85959;
+    background: transparent;
+    color: #f85959;
+    padding-left: 1.5rem!important;
+    padding-right: 1.5rem!important;
+    padding-bottom: 1rem!important;
+    margin-top: 1.5rem!important;
+    padding-top: 1rem!important;
+    font-family: "Poppins",Arial,sans-serif;
+    text-decoration: none;
+    border-radius: 50px;
+}
+.more:hover{
+    text-decoration: none;
+    transition: 0.5s;
+    color: white;
+    background-color: #f85959;
+}
+.subdiv2{
+    margin-left: 10%;
+    
+}
+.man{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.last{
+    background: linear-gradient(
+135deg
+, #2ebdc4 0%, #68e5b2 100%);
+width: 100%;
+height: 70vh;
+margin-top: 10%;
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.x{
+    width: 55%;
+}
+.new{
+    font-size: 40px;
+    color: #fff;
+    font-weight: 400 !important;
+
+}
+.far12{
+    color: rgba(255, 255, 255, 0.9);
+    font-family: "Poppins", Arial, sans-serif;
+}
+.email{
+    background: transparent !important;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 0.7) !important;
+    font-size: 16px;
+    height: 52px !important;
+    width: 50%;
+}
+.subscribe{
+    display: inline-block;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    color: #fff !important;
+    font-size: 16px;
+    background: transparent !important;
+    padding-right: 1px !important;
+    /* width: 15%; */
+}
+.y{
+    display: flex;
+    margin-left: 25%;
+    margin-top: 5%;
+}
+.s{
+    margin: auto;
+}
+.lastitem{
+    width: 100%;
+    height: 85vh;
+    background-color: #222831;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.dir{
+    color: #fff;
+    margin-bottom: 40px;
+    font-size: 18px;
+    font-weight: 400;
+    /* line-height: 1.5; */
+    margin-left: 10px;
+}
+.div1{
+    width: 15%;
+    margin-top: 3%;
+    margin-left: 3%;
+}
+.far10{
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 16px;
+    font-family: "Poppins", Arial, sans-serif;
+    margin-left: 10px;
+}
+.searchicon{
+    width: 60px;
+    height: 60px;
+    background: white;
+    border-radius: 50%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    opacity: 0;
+    position: absolute;
+    margin-left: 40%;
+    margin-top: 50%;
+}
+.searchicon:hover{
+    opacity: 1;
+    transition: 0.5s;
+}
+.searchicon2{
+    width: 60px;
+    height: 60px;
+    background: white;
+    border-radius: 50%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    opacity: 0;
+    position: absolute;
+    margin-left: 40%;
+    margin-top: 30%;
+}
+.searchicon2:hover{
+    opacity: 1;
+    transition: 0.5s;
+}
+.tw{
+    margin-top: 50px;
+
+    height: 50px;
+    width: 50px;
+    display: block;
+    float: left;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 50%;
+    position: relative;
+    color: white;
+    font-size: 25px;
+    padding-left: 15px;
+    padding-top: 12px;
+    margin-left: 10px;
+}
+.div2{
+    margin-left: 5%;
+    width: 15%;
+    margin-top: 3%;
+}
+.a1{
+    color: rgba(255, 255, 255, 0.7);
+    font-family: "Poppins", Arial, sans-serif;
+    margin-left: 10px;
+}
+.m{
+    margin-left: -2%;
+}
+
+@media screen and (min-width:100px) and (max-width:1024px){
+    .icons,.lastitem{
+    display: none;
+}
+    .maincard5{
+        width: 50%;
+        margin-top: 20px;
+        text-align: center !important;
+    }
+}
+</style>
+</html>

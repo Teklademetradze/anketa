@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="main1">
+            <img class="logo" src="data:image/webp;base64,UklGRrQDAABXRUJQVlA4TKgDAAAviQAKEGfBqG0kScm8rgW0/HnNhIaCtm0Yd+PP+KFp20hu95+fwvMH+GUUSbaTP9cf2CVzxAKFgOzfAR5w8AMCbvqciM1DU91ZyvufpViap/Jn6E0W2K+9d/r9//6JYVWqOCPREMIiIIQBVmpYIwSIgJACpgQR/gYHaQIiIizZtu2oce5aNUqfJzkESka4wyUd8v8/CAhMopVpRP8nAGIkyXGbBQ6A8A6Qf7o40rKdQET/J0Abpz+XB8Dj8n5Szd37k+Ln2dXKzkCOwTtwvosZGKxKTYJrozlo3kRIbYXOMHotj+OC5O8w1MYG6LRrBw+ry0ButLPPPKrSkyftPmWGijTQaM/mmVpJHtpqWKLTngFIktSSXC16Ru1oF+jJM92JG97K/0kq5ysO/A7Tg+wjYWECV/T2vTz/j077Ss9V25vE6BzZFhSJ/57+lSfNtgDRFAla9qSi5c/fP+sv/tJE1la7QCc5sq3og6YGHXHL9CB7SZGg9Z7+BbkEpVJMUsit97qvU/JTLvGy2nvbPwm79V63d6Xb4BOjk+TIVtByfwHkCRTpLNwRpATHS3Ck0HBHeHUm7jjXA19miWiSFAkq9KSXLEbvSWExk1leVEmT6jWGpMYqZnsx3oTFKmZlMYMkcGUBBklyZCsRvISt21hBkjYEqbDCFWFLBiZJB/KLCkeSDIoDjwJLwCApErR+gRdV+RZ1G5gUYV+ZFaTKkFsZLxZVbmc+jAWB+SBHtoL7y8qDe+zjqNGvSZU0KV6GpwDZK+A4FVpaYIgElR/F6sS9EkTJ4EiC2d3xxsDejfiSwHq2Mk8+QuhAr6V4mnykypDz9nt3ugJLBa3KG+5H6KwtSfZQmAqL7RW9dg6kd4FYEFjNXht7+gMcSLrTQ4S0WeHqtC8IivdxPGnN0srotPVJcwCD6PQHNdqg6s4QnV32i8F0wqJJ0gfNSmA5mrZOZDtAgBokVZ4SwHHCYgRJBT4vEtQghQZ29cQlS0udtkeiDqACq/dFe9KEIT/B6n3CCC9UYfUOfHQ78AuBefba7sDt8On7p6VF9pQnsIrgeAXSg04HmEV3o17aE2Am+ZHbwsdsdNrxxl1HPWb6xWgW9fNoFvVsmW6WgWjasSW7w/z/FrykNudOe06JTvWMpEm7W+Kqmo6kaa8pMVpVbIR2nzYxmiob4TatXG4r7gZXU3W7DINfgIVpADrV2EXgef59mp1+nZ/A3anSLmaKc3SqedPf8yzf+8b0/w4=" alt="img">
+        <aside class="sub">
+            <a class="a" href="#">Home</a>
+            <a class="b" href="#">About</a>
+            <a class="b" href="#"> Destination</a>
+            <select class="select" name="#" id="#">
+                <option value="#">Pages</option>
+                <option value="#">Destinations Details</option>
+                <option value="#">Elements</option>
+            </select>
+            <select class="select" name="#" id="#">
+                <option value="#">Blog</option>
+                <option value="#">Single-Blog</option>
+            </select>
+            <a class="b" href="#">Contacts</a>
+            <div class="span">
+            <span> <img class="phone" src="data:image/png;base64,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" alt="img"> 10(256)-928 256</span>
+            <span class="span2">|</span>
+            <a href=""><img class="insta" src="https://www.shareicon.net/data/256x256/2016/07/09/118293_instagram_512x512.png" alt=""></a>
+            <a href=""><img class="g" src="https://www.pngall.com/wp-content/uploads/2016/07/Linkedin-PNG-Clipart.png" alt=""></a>
+            <a href=""><img src="https://cutewallpaper.org/24/g+-logo-png/g-google-google-2015-google-plus-google-plus-2015-new-google-plus-plus-icon-free-download.png" alt="" class="g"></a>
+        </div>
+        <button class="search"><a href=""><img class="searchlogo" src="https://icon-library.com/images/white-search-icon/white-search-icon-5.jpg" alt=""></a></button>
+        </aside>
+    </nav>
+    <br>
+    <nav class="main2">
+        <div class="indonesia">
+            <h1 class="indonesia1">Indonesia</h1>
+            <p class="indonesia2">Pixel perfect design with awesome contents</p>
+            <button class="indonesia3"> <a class="explore" href="#"> Explore Now </a></button>
+        </nav>
+    <div  class="main3">
+<!-- <div class="span7"> -->
+    <span class="go">Where you want to go?</span>
+    <input class="where" type="D" placeholder="Where to go?">
+    <select class="select5" name="S" id="s">
+        <option value="V">Date</option>
+    </select>
+    <select class="select6" name="s" id="s">
+        <option value="x">Travel type</option>
+        <option value="a">Some option</option>
+        <option value="s">Another option</option>
+    </select>
+    <a class="Search" href="S">Search</a>
+</div>
+<!-- </div> -->
+
+    <div class="mydiv2">
+    <div class="mydiv">
+<span class="popular">Popular Destination</span>
+<p class="myparagraph">Suffered alteration in some form, by injected humour or good day randomised booth anim 8-bit hella wolf moon beard words.</p>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="main555">
+    <div class="sub10">
+        <img class="city" src="https://preview.colorlib.com/theme/travelo/img/destination/x1.png.pagespeed.ic.U57u1BX_9-.webp" alt="">
+        <div class="a4">
+            <span class="italy3">Italy</span>
+            <a class="places"  href="3">07 places</a>
+        </div>
+    </div>
+    <div class="sub10">
+        <img class="city" src="https://preview.colorlib.com/theme/travelo/img/destination/x2.png.pagespeed.ic.84P8l8vv4O.webp" alt="">
+        <div class="a3">
+            <span class="brazil3">Brazil</span>
+            <a class="places"  href="3">03 places</a>
+        </div>
+    </div>
+    <div class="sub10">
+        <img class="city" src="https://preview.colorlib.com/theme/travelo/img/destination/x3.png.pagespeed.ic.78W6B32hsk.webp" alt="">
+        <div class="a3">
+            <span class="brazil3">America</span>
+            <a class="places"  href="3">10 places</a>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+<div class="main555">
+    <div class="sub10">
+        <img class="city" src="https://preview.colorlib.com/theme/travelo/img/destination/x4.png.pagespeed.ic.eWKrFKhuKv.webp" alt="">
+        <div class="a4">
+            <span class="italy3">Nepal</span>
+            <a class="places"  href="3">02 places</a>
+        </div>
+    </div>
+    <div class="sub10">
+        <img class="city" src="https://preview.colorlib.com/theme/travelo/img/destination/x5.png.pagespeed.ic.w9itzKnbmP.webp" alt="">
+        <div class="a3">
+            <span class="brazil3">Maldives</span>
+         <a class="places"  href="3">02 places</a>
+        </div>
+    </div>
+    <div class="sub10">
+        <img class="city" src="https://preview.colorlib.com/theme/travelo/img/destination/x6.png.pagespeed.ic.G2cL_XuMxk.webp" alt="">
+        <div class="a3">
+            <span class="brazil3">Indonesia</span>
+            <a class="places"  href="3">05 places</a>
+        </div>
+    </div>
+</div>
+</div>
+    
+
+
+        <img class="man" src="https://preview.colorlib.com/theme/travelo/img/banner/xnewsletter.png.pagespeed.ic.Cg612iEyJd.png" alt="">
+        <div style="display: flex;" class="x">
+        <div class="y">
+        <h1 class="new">Subscribe Our Newsletter</h1>
+        <p class="discover">Subscribe newsletter to get offers and about new places to discover.</p>
+    </div>
+<div class="z">
+    <input class="input45" type="k" placeholder="Your mail">
+    <a class="subscribe" href="s">Subscribe</a>
+</div>    
+    </div>
+</div>
+<div class="country2">
+    <div class="ph1">
+    <h1 class="popularplaces">Popular Places</h1>
+    <p class="myparagraph">Suffered alteration in some form, by injected humour or good day randomised booth anim 8-bit hella wolf moon beard words.</p>
+</div>
+</div>
+<div class="country3">
+        <div class="california">
+            <div>
+            <img class="cal1" src="https://preview.colorlib.com/theme/travelo/img/place/x1.png.pagespeed.ic.PhjDw51Df0.webp" alt="" >
+            <a class="prize" href="d">500$</a>
+        </div>
+            <div class="xy">
+            <h1 class="cal2">California</h1>
+            <p class="usa">United state of america</p>
+        </div>
+        </div>
+        <div class="Korola">
+            <div>
+            <img class="cal1" src="https://preview.colorlib.com/theme/travelo/img/place/x2.png.pagespeed.ic.oDyLMXogRU.webp" alt="" >
+            <a class="prize" href="d">500$</a>
+        </div>
+            <div class="xy">
+            <h1 class="cal2">Korola Megna</h1>
+            <p class="usa">United state of america</p>
+        </div>
+        </div>
+        <div class="Korola">
+            <div>
+            <img class="cal1" src="https://preview.colorlib.com/theme/travelo/img/place/x3.png.pagespeed.ic.O3ye6I5nwK.webp" alt="" >
+            <a class="prize" href="d">500$</a>
+        </div>
+            <div class="xy">
+            <h1 class="cal2">London</h1>
+            <p class="usa">United state of america</p>
+        </div>
+        </div>
+</div>
+<div class="country3">
+    <div class="california">
+        <div>
+        <img class="cal1" src="https://preview.colorlib.com/theme/travelo/img/place/x4.png.pagespeed.ic.06-m2kwAgz.webp" alt="" >
+        <a class="prize" href="d">500$</a>
+    </div>
+        <div class="xy">
+        <h1 class="cal2">Miami Beach</h1>
+        <p class="usa">United state of america</p>
+    </div>
+    </div>
+    <div class="Korola">
+        <div>
+        <img class="cal1" src="https://preview.colorlib.com/theme/travelo/img/place/x5.png.pagespeed.ic.48MOUf4-ss.webp" alt="" >
+        <a class="prize" href="d">500$</a>
+    </div>
+        <div class="xy">
+        <h1 class="cal2">California</h1>
+        <p class="usa">United state of america</p>
+    </div>
+    </div>
+    <div class="Korola">
+        <div>
+        <img class="cal1" src="https://preview.colorlib.com/theme/travelo/img/place/x6.png.pagespeed.ic.fa-tLZWwUw.webp" alt="" >
+        <a class="prize" href="d">500$</a>
+    </div>
+        <div class="xy">
+        <h1 class="cal2">Saintmartine Iceland</h1>
+        <p class="usa">United state of america</p>
+    </div>
+    </div>
+</div>
+<div class="button8">
+    <a class="more" href="M">More Places</a>
+</div>
+<div class="main50">
+<!-- <h1 style="margin-top: -10%;"> Enjoy Video</h1> -->
+  <div class="main10">
+        <div class="main20">
+            <a href="s"><img class="img50" src="https://itstepgeogia.sharepoint.com/sites/JP-19/Shared%20Documents/General/play-512.png" alt=""></a>
+        </div>
+    </div>
+</div>
+<div style="display: flex; flex-wrap: wrap;" class="travel">
+    <div style="display: flex; flex-wrap: wrap;" class="journey2">
+    <div class="bus">
+        <img class="bus2" src="https://preview.colorlib.com/theme/travelo/img/svg_icon/1.svg" alt="">
+        <div>
+            <h3 class="journey">Comfortable Journey</h3>
+            <p class="wonder">A wonderful serenity has taken to the possession of my entire soul.</p>
+        </div>
+    </div>
+    <div class="bus">
+        <img class="bus2" src="https://preview.colorlib.com/theme/travelo/img/svg_icon/2.svg" alt="">
+        <div>
+            <h3 class="journey">Luxuries Hotel</h3>
+            <p class="wonder">A wonderful serenity has taken to the possession of my entire soul.</p>
+        </div>
+    </div>
+    <div class="bus">
+        <img class="bus2" src="https://preview.colorlib.com/theme/travelo/img/svg_icon/3.svg" alt="">
+        <div>
+            <h3 class="journey">Travel Guide</h3>
+            <p class="wonder">A wonderful serenity has taken to the possession of my entire soul.</p>
+        </div>
+    </div>
+</div>
+</div>
+<div class="girl">
+    <div class="mini">
+        <div style="text-align: center;">
+        <img class="photo3" src="https://preview.colorlib.com/theme/travelo/img/testmonial/xauthor.png.pagespeed.ic.bYK1hmTXSr.webp" alt="">
+    </div>
+        <div style="text-align: center;">
+        <p class="working">"Working in conjuction with humanitarian aid agencies, we have supported programmes to help alleviate human suffering.</p>
+        <p class="mouse">-Mickey Mouse</p>
+    </div>
+</div>
+</div>
+<div class="trip">
+    <div class="bmg">
+    <span class="recent">Recent Trip</span>
+</div>
+    <div class="main555">
+        <div class="sub10">
+            <img class="city" src="https://preview.colorlib.com/theme/travelo/img/trip/x1.png.pagespeed.ic.TCe9EhKBE3.webp" alt="">
+            <div>
+                <p class="date">Oct 12, 2019</p>
+                <p class="best">Journeys Are Best Measured In New Friends</p>
+            </div>
+        </div>
+        <div class="sub10">
+            <img class="city" src="https://preview.colorlib.com/theme/travelo/img/trip/x2.png.pagespeed.ic.wrqsn2d2l2.webp" alt="">
+            <div>
+                <p class="date">Oct 12, 2019</p>
+                <p class="best">Journeys Are Best Measured In New Friends</p>
+            </div>
+        </div>
+        <div class="sub10">
+            <img class="city" src="https://preview.colorlib.com/theme/travelo/img/trip/x3.png.pagespeed.ic.jiKGCsekSW.webp" alt="">
+            <div>
+                <p class="date">Oct 12, 2019</p>
+                <p class="best">Journeys Are Best Measured In New Friends</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div style="display: flex;" class="noname">
+    <div class="no">
+    <div class="rock">
+    <img class="name2" src="https://preview.colorlib.com/theme/travelo/img/xfooter_logo.png.pagespeed.ic.lvE0aE5-r2.webp" alt="">
+    <p class="king">5th flora, 700/D kings road, green lane New York-1782</p>
+    <p class="phonenumber">+10 367 826 2567</p>
+    <p class="mail">contact@carpenter.com</p>
+</div>
+    <div class="idk">
+        <p class="company">Company</p>
+        <a style="display: block;" href="#" class="href">Pricing</a>
+        <a style="display: block;" href="#" class="href">About</a>
+        <a style="display: block;" href="#" class="href">Gallery</a>
+        <a style="display: block;" href="#" class="href">Contact</a>
+    </div>
+    <div class="gmg">
+        <p>Popular Destination</p>
+        <div style="display: flex;">
+        <div class="mainest7">
+        <a style="display: block;" href="#" class="countries">Indonesia</a>
+        <a style="display: block;" href="#" class="countries">India</a>
+        <a style="display: block;" href="#" class="countries">Italy</a>
+        <a style="display: block;" href="#" class="countries">Franch</a>
+    </div>
+        <div class="mainest">
+            <a style="display: block;" href="#" class="countries">America</a>
+            <a style="display: block;" href="#" class="countries">Switzerland</a>
+            <a style="display: block;" href="#" class="countries">Canada</a>
+            <a style="display: block;" href="#" class="countries">England</a>
+        </div>
+</div>
+</div>
+    <div class="instagram">
+        <p class="in">Instagram</p>
+        <div style="display:flex;">
+            <div style="display: flex;">
+        <img class="nature" src="https://preview.colorlib.com/theme/travelo/img/instagram/x1.png.pagespeed.ic.LdZEUxVUOD.webp" alt="">
+        <img class="nature" src="https://preview.colorlib.com/theme/travelo/img/instagram/x2.png.pagespeed.ic.GyH5qcaE5h.webp" alt="">
+        <img class="nature" src="https://preview.colorlib.com/theme/travelo/img/instagram/x3.png.pagespeed.ic._oM9YgJOVj.webp" alt="">
+    </div>
+    </div>
+<div style="display:flex; ">
+        <div style="display: flex;">
+    <img class="nature" src="https://preview.colorlib.com/theme/travelo/img/instagram/x4.png.pagespeed.ic.NpuJK11K8C.webp" alt="">
+    <img class="nature" src="https://preview.colorlib.com/theme/travelo/img/instagram/x5.png.pagespeed.ic.adEyUiislQ.webp" alt="">
+    <img class="nature" src="https://preview.colorlib.com/theme/travelo/img/instagram/x6.png.pagespeed.ic.CRMjjStKwL.webp" alt="">
+</div>
+</div>
+</div>   
+</div>
+</div>
+</body>
+<style>
+    body{
+        background-color: whitesmoke;
+        margin: 0%;
+    }
+    .main1{
+        display: flex;
+        width: 100%;
+        height: 100px;
+        background-color: #fff;
+        position: fixed;
+        /* flex-wrap: wrap; */
+        z-index: 1;
+    }
+    .sub{
+        display: flex;
+        margin-top: 40px;
+        width: 100%;
+        margin-left: 120px;
+    }
+    .logo{
+        height: 40px;
+        width: 130px;
+        margin-top: 30px;
+        margin-left: 40px;
+    }
+    .a{
+        display: inline-block;
+        font-family: "Rubik",sans-serif;
+        font-weight: normal;
+        font-style: normal;
+        text-decoration: none;
+        color: #212529;
+        font-size: 1rem;
+        margin-left: 30px;    
+    }
+    .b{
+        display: inline-block;
+        font-family: "Rubik",sans-serif;
+        font-weight: normal;
+        font-style: normal;
+        text-decoration: none;
+        color: #212529;
+        font-size: 1rem;
+        margin-left: 30px;
+    }
+    .b:hover{
+        color: #a5ddd2;
+        transition: 0.5s;
+    }
+    .a:hover{
+        color: #a5ddd2;
+        transition: 0.5s;
+    }
+    .select{
+        font-size: 15px;
+        color: #040e27;
+        font-weight: 400;
+        display: inline-block;
+        font-family: "Rubik",sans-serif;
+        text-decoration: none;
+        background-color: transparent;
+        border: none;
+        height: 20px;
+        width: 65px;
+        margin-left: 20px;
+    }
+    .select:hover{
+        color: #a5ddd2;
+        transition: 0.5s;
+        border: none;
+    }
+    .phone{
+        width: 15px;
+        height: 15px;
+    }
+    .span{
+        margin-left: 20%;
+        font-family: "Rubik",sans-serif;
+        font-weight: 400;
+        display: flex;
+    }
+    .span2{
+        font-size: 30px;
+        margin-left: 10px;
+        color: #f5f5f5;
+        font-weight: 100;
+        margin-top: -1%;
+    }
+    .insta{
+        width: 16px;
+        height: 16px;
+        margin-left: 10px;
+    }
+    .g{
+        margin-left: 10px;
+        width: 18px;
+        height: 18px;
+    }
+    .search{
+        width: 80px;
+        height: 100px;
+        margin-left: 10%;
+        margin-top: -3.5%;
+        background: #ff4a52;
+        border: none;
+    }
+    .searchlogo{
+        margin: 0%;
+        width: 20px;
+        height: 20px;
+    }
+    .main2{
+        height: 86.6vh;
+        background-image: url("https://preview.colorlib.com/theme/travelo/img/banner/xbanner.png.pagespeed.ic.95MMQV933B.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        margin-top: 82px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .main3{
+        height: 20vh;
+        background-color: #040e27;
+        width: 100%;
+        margin-top: -3%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .indonesia{
+        margin-top: -10%;
+    }
+    .indonesia1{
+        font-size: 120px;
+        font-family: "Nothing You Could Do",cursive;
+        color: #f5f5f5;
+    }
+    .indonesia2{
+        font-size: 20px;
+        font-weight: 400;
+        color: #fff;
+        margin-top: -20%;
+        /* margin-left: 20%; */
+        font-family: "Rubik",sans-serif;
+    }
+    .explore{
+        color: #fff;
+        padding: 18px 41px;
+        font-family: "Rubik",sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        text-decoration: none;
+    }
+    .indonesia3{
+        background: #1ec6b6;
+        border: none;
+        border-radius: 5px;
+        margin-top: 5%;
+        height: 50px;
+    }
+    .indonesia3:hover{
+        background-color:#ff4a52;
+        transition: 0.5s;
+    }
+    .mydiv{
+        width: 35%;
+        margin-left: 30%;
+        margin-top: 10%;
+        text-align: center;
+    }
+    .popular{
+        font-size: 38px;
+        font-weight: 400;
+        color: #040e27;
+
+    }
+    .myparagraph{
+        font-size: 16px;
+        color: #7a838b;
+        line-height: 28px;
+        margin-bottom: 0;
+        font-weight: 400;
+        font-family: "Rubik",sans-serif;
+        text-align: center!important;
+    }
+    .places{
+        display: inline-block;
+        background: #1ec6b6;
+        font-size: 12px;
+        border-radius: 30px;
+        font-weight: 400;
+        padding: 0 12px;
+        height: 25px;
+        line-height: 25px;
+        color: #fff;
+        border: none;
+        text-decoration: none;
+        margin-left: 4%;
+    }
+    .italy3{
+        font-size: 22px;
+        color: white;
+        font-weight: 400;
+        font-family: "Rubik",sans-serif;
+
+    }
+    .a4{
+        margin-top: -18%;
+    }
+    /* .italy2{
+        margin-left: -10%;
+    } */
+    .country{
+        margin-top: 5%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .country2{
+        display: flex;
+        margin-top: 5%;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+    }
+    .brazil3{
+        font-size: 22px;
+        color: white;
+        font-weight: 400;
+        font-family: "Rubik",sans-serif;
+    }
+    .a3{
+        margin-top: -18%;
+        margin-left: 10%;
+    }
+    .America{
+        margin-left: 2.5%;
+    }
+    .go{
+        font-size: 24px;
+        color: #fff;
+        font-weight: 400;
+        margin-left: 3%;
+    }
+    .where{
+        width: 12%;
+        height: 43px;
+        background: transparent;
+        border: 1px solid #363e52;
+        padding-left: 15px;
+        border-radius: 5px;
+        color: #fff;
+        margin-left: 5%;
+    }
+    .select5{
+        width: 14%;
+        height: 46px;
+        background: transparent;
+        border: 1px solid #363e52;
+        padding-left: 15px;
+        border-radius: 5px;
+        color: #fff;
+        margin-left: 1%;
+    }
+    .select6{
+        width: 14%;
+        height: 46px;
+        background: transparent;
+        border: 1px solid #363e52;
+        padding-left: 15px;
+        border-radius: 5px;
+        color: #fff;
+        margin-left: 1%;
+    }
+    .Search{
+        background: #ff4a52;
+        color: #fff;
+        display: inline-block;
+        padding: 13px 39px;
+        font-family: "Rubik",sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        border: 0;
+        border-radius: 5px;
+        text-align: center;
+        text-decoration: none;
+        height: 13%;
+        margin-left: 1%;
+    }
+    .span7{
+        margin-left: 10%;
+        margin-top: 3%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .Search:hover{
+        transition: 0.5s;
+        background-color:  #1ec6b6;
+    }
+    .man{
+        width: 100%;
+        margin-top: 10%;
+        height: 30vh;
+    }
+    .img5{
+        display: flex;
+    }
+    .new{
+        font-size: 24px;
+        font-weight: 400;
+        color: #fff;
+        margin-top: -11%;
+        margin-left: 20%;
+    }
+    .discover{
+        margin-left: 20%;
+        color: gray;
+        font-size: 16px;
+        line-height: 28px;
+        font-family: "Rubik",sans-serif;
+    }
+    .input45{
+        width: 40%;
+        height: 50px;
+        background: #fff;
+        border-radius: 5px;
+        border: 0;
+        padding-left: 15px;
+        color: #000;
+        font-size: 16px;
+        font-family: "Rubik",sans-serif;
+        font-weight: 300;
+    }
+    .subscribe{
+        background: #ff4a52;
+        color: #fff;
+        display: inline-block;
+        padding: 13px 39px;
+        font-family: "Rubik",sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        border: 0;
+        border-radius: 5px;
+        text-align: center;
+        text-decoration: none;
+    }
+    .subscribe:hover{
+        transition: 0.5s;
+        background-color:  #1ec6b6;
+    }
+    .x{
+        margin-top: -8%;
+    margin-left: 15%;
+    }
+    .z{
+        margin-left: 10%;
+        width: 100%;
+    }
+   .popularplaces{
+        font-weight: 400;
+        color: #040e27;
+   }
+   .ph1{
+       width: 35%;
+       text-align: center;
+   }
+   .cal1{
+        border-top-left-radius: 4%;
+        border-top-right-radius: 4%;
+        display: inline;
+    }
+    .california{
+        border-top-left-radius: 4%;
+        border-top-right-radius: 4%;
+        height: 45vh;
+        background: white;
+        width: fit-content;
+        border-radius: 10px;
+    }
+
+    .cal2{
+        font-size: 22px;
+        font-weight: 400;
+        color: #040e27;
+    }
+    .usa{
+        font-size: 14px;
+        font-weight: 400;
+        color: #7a838b;
+        margin-top: 2px;
+        margin-bottom: 7px;
+    }
+    .xy{
+        margin-left: 50px;
+    }
+
+    .prize{
+        position: absolute;
+        background: #1ec6b6;
+        padding: 7px 18px 4px 18px;
+        display: inline-block;
+        margin-top: 2%;
+        margin-left: -23%;
+        border-radius: 18px;
+        color: #fff;
+        font-size: 16px;
+        border: none;
+        text-decoration: none;
+    }
+    .prize:hover{
+        background-color: #ff4a52;
+        transition: 0.5s;
+    }
+    .california:hover{
+        box-shadow: 0 4px 8px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+        transition: 0.5s;
+    }
+    .Korola:hover{
+        box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+        transition: 0.5s;
+    }
+    .cal2:hover{
+        color: #ff4a52;
+        transition: 0.5s;
+    }
+    .country3{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 10%;
+        margin-top: 5%;
+    }
+    .Korola{
+        height: 45vh;
+        background: white;
+        width: fit-content;
+        margin-left: 3%;
+        border-radius: 10px;
+    }
+    .button8{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        margin-top: 5%;
+    }
+    .more{
+        background: #ff4a52;
+        color: #fff;
+        display: inline-block;
+        padding: 13px 39px;
+        font-family: "Rubik",sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+    .more:hover{
+        background: #1ec6b6;
+        transition: 0.5s;
+    }
+    .main20 .img50{
+    width: 20px;
+    height: 20px;
+    }
+    .main50{
+        width: 100%;
+        height: 500px;
+        background-image: url("https://preview.colorlib.com/theme/travelo/img/banner/video.png.webp");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5%;
+    }
+    .main10{
+        width: 120px;
+        height: 120px;
+        background: #1ec6b6;
+        border-radius: 50%;
+        animation: x 1s infinite;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: transparent;
+    }
+    .main20{
+        width: 90px;
+        height: 90px;
+        background: #1ec6b6;
+        border-radius: 50%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+    .enjoy{
+        font-family: "Nothing You Could Do",cursive;
+        font-weight: 400;
+        font-size: 80px;
+        line-height: 90px;
+        color: #fff;
+        margin-top: 10%;
+        margin-left: 30%;
+    }
+    .travel{
+        display: flex;
+        width: 100%;
+        height: 60vh;
+        background-color: white;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .bus{
+        text-align: center;
+        width: 20%;
+        margin-left: 5%;
+    }
+    .journey{
+        font-size: 22px;
+        font-weight: 400;
+        color: #040e27;
+        margin-bottom: 10px;
+        margin-top: 41px;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+    }
+    .wonder{
+        text-align: center!important;
+        font-size: 16px;
+        font-weight: 400;
+        color: #6e6e6e;
+    }
+    .journey2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .girl{
+        width: 100%;
+        height: 60vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f7fafd;
+    }
+    .mini{
+        width: 33%;
+    }
+    .working{
+        color: #040e27;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 32px;
+        margin: 34px 0 10px 0;
+    }
+    .mouse{
+        color: #7a838b;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .trip{
+        width: 100%;
+        background-color: whitesmoke;
+        margin: 0;
+        align-items: center;
+    }
+    .bmg{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+    }
+    .recent{
+        margin-top: 10%;
+        font-size: 38px;
+        font-weight: 400;
+        color: #040e27;
+        padding-bottom: 7px;
+    }
+    .main555{
+        margin-top: 5%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .sub10{
+        margin-left: 3%;
+    }
+    .date{
+        font-size: 14px;
+        font-weight: 400;
+        color: #7a838b;
+        display: block;
+    }
+    .best{
+        color: #040e27;
+        font-size: 22px;
+        font-weight: 400;
+        margin-bottom: 0;
+        margin-top: 10px;
+        width: 90%;
+    }
+    .best:hover{
+        color:  #ff4a52;
+        transition: 0.5s;
+    }
+    .noname{
+        width: 100%;
+        height: 75vh;
+        background-color: #040e27;
+        margin-top: 10%;
+    }
+    .rock{
+        width: 30%;
+    }
+    .king, .phonenumber, .mail{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 26px;
+        color: #aab1b7;
+    }
+    .no{
+        margin-left: 10%;
+        margin-top: 10%;
+        display: flex;
+    }
+    .idk{
+        margin-left: 10%;
+    }
+    .href{
+        color: #aab1b7;
+        font-weight: 400;
+        font-family: "Rubik",sans-serif;
+        text-decoration: none;
+        line-height: 36px;
+    }
+    .company{
+        font-size: 20px;
+        font-weight: 400;
+        color: #fff;
+        text-transform: capitalize;
+        font-family: "Rubik",sans-serif;
+    }
+    .gmg{
+        margin-left: 10%;
+        width: 50%;
+    }
+    .gmg p{
+        font-size: 20px;
+        font-weight: 400;
+        color: #fff;
+        text-transform: capitalize;
+        font-family: "Rubik",sans-serif;
+    }
+    .gmg a{
+        color: #aab1b7;
+        font-weight: 400;
+        font-family: "Rubik",sans-serif;
+        text-decoration: none;
+        line-height: 36px;
+    }
+    .mainest{
+        margin-left: 5%;
+    }
+    .in{
+        font-size: 20px;
+        font-weight: 400;
+        color: #fff;
+        text-transform: capitalize;
+        margin-bottom: 45px;
+        font-family: "Rubik",sans-serif;
+    }
+    .nature{
+        border-radius: 5px;
+        margin-left: 5%;
+        margin-top: 5%;
+    }
+    .instagram{
+        margin-left: 50%;
+    }
+    @media screen and (min-width:100px) and (max-width:1024px){
+        .sub{
+            display: none;
+        }
+        .main1{
+            justify-content: center;
+            align-items: center;
+        }
+        .main2{
+            background-size: 100% 60%;
+            text-align: center;
+            justify-content: center;
+        }
+        .indonesia{
+            margin-top: -100%;
+            align-items: center;
+            text-align: center;
+        }
+}
+@keyframes  x {
+    0%{
+        width: 100px;
+    height: 100px;
+    background: rgba(49,179,178,0.5);
+    border-radius: 50%;
+ 
+    }
+    100%{
+        width: 130px;
+    height: 130px;
+    background: rgba(49,179,178, 0.5);
+    border-radius: 50%;
+ }
+}
+</style>
+</html>

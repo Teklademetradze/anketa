@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+</body>
+</html>
+<style>.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-left:-130px;
+  margin-top:-35px;
+}
+.textfield {
+ position: relative;
+  padding: 10px 15px;
+  border:1px solid #e3f2fd;
+  border-radius:5px;
+  box-shadow: none;
+}
+.centered span {
+  position: absolute;
+  /* z-index: 1; */
+  background-color:#fff;
+  top: 13px;
+  left: 15px;
+  color:#A9A9A9;
+  padding:0 5px;
+}
+.textfield:focus {
+  border:1px solid #0d47a1;
+}
+
+input:not(:focus):valid ~ span {
+  top:-8px;
+}
+
+</style>
